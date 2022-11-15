@@ -9,6 +9,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
   --section-bg-color: #2f303a;
   --text-logo: #000000;
   --bg-hero: #2f303a;
@@ -42,7 +43,7 @@ body {
   padding-right: 15px;
   width: 1200px;
 
-  outline: 2px solid #2196f3;
+  /* outline: 2px solid #2196f3; */
 }
 
 /* лого */
@@ -69,7 +70,6 @@ body {
 .nav-main {
   display: flex;
   align-items: center;
-  margin-bottom: 94px;
   border-bottom: 1px solid var(--primary-border-color);
 }
 .nav-site {
@@ -128,23 +128,27 @@ body {
 
 /* герой */
 .hero {
-  text-align: center;
+  padding-bottom: 280px;
+  padding-top: 200px;
   margin-bottom: 94px;
+  background: var(--bg-hero);
+  text-align: center;
 }
 
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
 
   color: var(--primary-white-color);
-  background: var(--bg-hero);
+
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
-  outline: 2px solid #2196f3;
 }
 /* секції */
 .section {
@@ -154,6 +158,18 @@ body {
   margin-bottom: 0;
 }
 
+.section-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section-contect {
+  margin-right: 30px;
+}
+.section-contect:last-child {
+  margin-right: 0;
+}
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -166,13 +182,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section-title.centered {
-  text-align: center;
-}
-
-.section-title.header {
-  padding-top: 94px;
-}
 /* особливості */
 
 .title-hiden {
@@ -182,8 +191,15 @@ body {
 }
 .features {
   display: flex;
+  justify-content: space-between;
 }
-
+.features-list {
+  width: 270px;
+  margin-right: 30px;
+}
+.features-list:last-child {
+  margin-right: 0;
+}
 .features .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -198,15 +214,28 @@ body {
 .features-paragraph {
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 30px;
 }
-.features-paragraph:last-child {
-  margin-right: 0;
-}
+
 /* команда */
 
 .team {
   padding-bottom: 94px;
+  background-color: var(--secondary-bg-color);
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-content {
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-content:last-child {
+  margin-right: 0;
 }
 
 .team-title {
@@ -229,11 +258,29 @@ body {
 }
 
 /* футер */
+.logo-fotter {
+  margin-bottom: 20px;
+}
 .address {
-  background: #2f303a;
+  background: var(--bg-hero);
+}
+
+.address-nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address-nav-list {
+  margin-bottom: 9px;
+}
+.address-nav-list:last-child {
+  margin-bottom: 0;
 }
 
 .address-nav .link {
+  /* margin-bottom: 9px; */
   font-style: normal;
 }
 
@@ -255,7 +302,7 @@ body {
 .button {
   padding: 6px 25px;
   color: var(--title-text-color);
-  background: var(--primary-bg-color);
+  background: var(--primary-border-color);
   font-family: inherit;
   border: none;
   letter-spacing: 0.06em;
