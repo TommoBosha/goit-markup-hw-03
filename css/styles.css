@@ -149,9 +149,9 @@ body {
   font-size: 44px;
   line-height: 1.36;
 }
-/* секції */
+/* чим займаємося секції */
 .section {
-  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section:last-child {
   margin-bottom: 0;
@@ -183,7 +183,7 @@ body {
 
 /* особливості */
 .section-features {
-  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .title-hiden {
