@@ -244,13 +244,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.section-contect {
-  margin-right: 30px;
-}
-.section-contect:last-child {
-  margin-right: 0;
+  gap: 30px;
 }
 
 .section-img {
