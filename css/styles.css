@@ -85,6 +85,11 @@ p {
   line-height: 1.19;
 }
 
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .accent {
   color: var(--accent-color);
 }
@@ -209,7 +214,7 @@ p {
   margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
-  font-style: normal;
+
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -425,7 +430,7 @@ p {
 .project-title {
   margin-bottom: 4px;
   color: var(--title-text-color);
-  font-style: normal;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
