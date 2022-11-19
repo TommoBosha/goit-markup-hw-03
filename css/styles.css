@@ -275,6 +275,8 @@ p {
 }
 
 .team-content {
+  flex-basis: 270px;
+  min-width: 270px;
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -298,18 +300,23 @@ p {
 }
 
 /* футер */
-.logo-fotter {
-  margin-bottom: 20px;
-}
+
 .address {
   background: var(--bg-hero);
 }
-
-.address-nav {
-  display: flex;
-  flex-direction: column;
+.address-part {
+  display: inline-block;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.logo-fotter {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.address-nav {
+  font-style: normal;
 }
 
 .address-nav-list {
@@ -317,11 +324,6 @@ p {
 }
 .address-nav-list:last-child {
   margin-bottom: 0;
-}
-
-.address-nav .link {
-  /* margin-bottom: 9px; */
-  font-style: normal;
 }
 
 .address-nav .link:hover,
@@ -402,7 +404,7 @@ p {
 .flex-menu {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .flex-container {
